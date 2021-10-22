@@ -3,118 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebDev</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>WebDev</title>
 </head>
 <body>
 
     <header class="header">
         <div class="container">
-            <nav class="nav">
-                <a class="nav__link active" href="#">About</a>
-                <a class="nav__link" href="#">Syllabus</a>
-                <a class="nav__link-logo" href="#"><img class="logo" src="assets/logo.svg" alt="Logo"></a>
-                <a class="nav__link" href="#">Projects</a>
-                <a class="nav__link" href="#">FAQ</a>
+            <nav class="navbar navbar-expand-md navbar-light col-md-8 m-auto">
+                <div class="container-fluid p-0">
+                    <a class="navbar-brand" href="#"><img src="assets/img/logo.svg" alt="WebDev"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Syllabus</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </div>
-    </header>
-    <div class="intro">
+    </header><!--    Header-->
+
+    <div class="intro d-flex align-items-center">
         <div class="container">
-            <div class="intro__inner">
-                <h1 class="intro__title">your life is WebDev</h1>
-                <p class="intro__text">Whatever the approach to development may be, the final<br> program must satisfy some fundamental properties</p>
-                <a class="btn" href="#">Get Started</a>
-                <div class="social">
+            <div class="row justify-content-center">
+                <h1 class="intro__title text-center">your life is WebDev</h1>
+                <div class="intro__text">
+                    <p>Whatever the approach to development may be, the final program must satisfy some fundamental properties</p>
+                </div>
+                <div class="text-center">
+                    <button type="button" class="btn btn-primary rounded-0">Get started</button>
+                </div>
+                <div class="col text-center">
                     <a href="#" class="social__item" target="_blank">
-                        <img class="social__icon" src="./assets/social_icon/mail_fff.svg" alt="Mail">
+                        <img class="social__icon" src="./assets/img/social_icon/mail_fff.svg" alt="Mail">
                     </a>
                     <a href="#" class="social__item" target="_blank">
-                        <img class="social__icon" src="./assets/social_icon/facebook_fff.svg" alt="Facebook">
+                        <img class="social__icon" src="./assets/img/social_icon/facebook_fff.svg" alt="Facebook">
                     </a>
                     <a href="#" class="social__item" target="_blank">
-                        <img class="social__icon" src="./assets/social_icon/insta_fff.svg" alt="Instagram">
+                        <img class="social__icon" src="./assets/img/social_icon/insta_fff.svg" alt="Instagram">
                     </a>
                     <a href="#" class="social__item" target="_blank">
-                        <img class="social__icon" src="./assets/social_icon/youtube_fff.svg" alt="YouTube">
+                        <img class="social__icon" src="./assets/img/social_icon/youtube_fff.svg" alt="YouTube">
                     </a>
                 </div>
             </div>
         </div>
-    </div>
-    <section class="section">
+    </div><!--    Intro-->
+
+    <section class="section section__rappresent">
         <div class="container">
-            <div class="rappresent">
-                <div class="rapresent__item">
+            <div class="row justify-content-around align-items-center">
+                <div class="col-md-4 col-sm-6">
                     <h2 class="section__title">Rappresent your idea with smart Design</h2>
                     <p class="section__text">Tasks accompanying and related to programming include: testing, debugging, source code maintenance, implementation of build systems, and management of derived artifacts, such as the machine code of computer programs. </p>
-                    <a class="btn" href="#">Get Started</a>
+                    <button type="button" class="btn btn-primary rounded-0">Get started</button>
                 </div>
-                <img src="./assets/content-image-1.jpg" alt="Photo">
+                <div class="col-md-4 col-sm-6">
+                    <img src="./assets/img/content-image-1.jpg" alt="Photo">
+                </div>
             </div>
         </div>
-    </section>
+    </section><!--    Section rappresent-->
+
     <section class="section section--gray">
         <div class="container">
-            <div class="community">
-                <div class="community__inner">
-                    <img src="./assets/icon.png" alt="Photo">
-                    <h2 community__title>our community</h2>
+            <div class="row align-items-center">
+                <div class="comunity__content col-md-3 ms-auto">
+                    <img src="./assets/img/icon.png" alt="Photo">
+                    <h3 class="community__title">our community</h3>
                     <p class="community__text">A hacker is any skilled computer expert that uses their technical knowledge to overcome a problem, but it can also mean a security hacker in common language</p>
                 </div>
-                <div class="community__slider">
+                <div class="col-md-7 ms-auto">
+                    
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/img/slide-img-1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/slide-img-2.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/slide-img-3.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
 
                 </div>
             </div>
         </div>
-    </section>
-    <section class="section">
+    </section><!--    Section community-->
+
+    <section class="section section__implement">
         <div class="container">
-            <div class="implement">
-                <img src="./assets/content-image-1.jpg" alt="Photo">
-                <div class="implement__item">
+            <div class="row justify-content-around align-items-center">
+                <div class="col-md-4 col-sm-6">
+                    <img src="./assets/img/content-image-2.jpg" alt="Photo">
+                </div>
+                <div class="col-md-4 col-sm-6">
                     <h2 class="section__title">Implement right Code</h2>
                     <p class="section__text">Tasks accompanying and related to programming include: testing, debugging, source code maintenance, implementation of build systems, and management of derived artifacts, such as the machine code of computer programs. </p>
-                    <a class="btn" href="#">Get Started</a>
+                    <button type="button" class="btn btn-primary rounded-0">Learn more</button>
                 </div>
             </div>
         </div>
-    </section>
+    </section><!--    Section implement-->
+
     <section class="section section__newsletter">
         <div class="container">
-            <div class="sign__up">
-                <h2 class="sign__up-title">sign up for our newsletter</h2>
-                <form action="#">
-                    <input  class="sign__up-field" id="email" type="email" placeholder="Your e-mail">
-                    <button class="sign__up-btn" type="submit"><span class="check">&#x2714;</span></button>
-                </form>
+            <div class="row text-center">
+                <div class="col-md-4 m-auto newsletter__item">
+                    <h2 class="section__title newsletter--title">sign up for our newsletter</h2>
+                    <form>
+                        <div class="input-group mb-3">
+                            <input id="exampleFormControlInput1" type="email" class="form-control rounded-0" placeholder="Enter email" aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <button class="btn btn-primary rounded-0" type="button" id="button-addon2">&#x2714;</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-    </section>
+    </section><!--    Section newsletter-->
+
     <section class="section section--gray">
         <div class="container">
-            <div class="download">
-                <h2 class="section__title">Download the App</h2>
-                <p class="section__text">Machine code was the language of early programs, written in the instruction set of the particular machine, often in binary notation.</p>
-                <div class="download__app">
-
+            <div class="row text-center">
+                <div class="col-md-6 col-sm-12 m-auto">
+                    <h2 class="section__title">Download the App</h2>
+                    <p class="section__text">Machine code was the language of early programs, written in the instruction set of the particular machine, often in binary notation.</p>
+                    <div class="download__app row d-flex justify-content-between">
+                        <div class="col">
+                            <img src="assets/img/app-store.svg" alt="App Store">
+                            <!-- <a class="btn-store apple-store" href="#">
+                                Apple Store
+                            </a> -->
+                        </div>
+                        <div class="col">
+                            <img src="assets/img/google-play.svg" alt="Google Play">
+                            <!-- <a class="btn-store google-store" href="#">
+                                Play Market
+                            </a> -->
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section><!--    Section app-->
+
     <footer class="footer">
         <div class="container">
-            <div class="footer__inner">
-                <div class="footer__nav">
-                    <a class="footer__nav-link" href="#">Credits</a>
-                    <a class="footer__nav-link" href="#">Privacy</a>
-                    <a class="footer__nav-link" href="#">Our teams</a>
+            <div class="footer__inner row align-items-center">
+                <div class="col-md-4 col-sm-6">
+                    <a href="#"><img class="footer__logo" src="./assets/img/logo.svg" alt="WebDev"></a>
                 </div>
-                <a href="#"><img src="./assets/logo.svg" alt="Logo"></a>
-                <p class="copyright">by TonYem for RSS at 2020</p>
+                <div class="col-md-4 col-sm-6">
+                    <a class="footer__link" href="#">Credits</a>
+                    <a class="footer__link" href="#">Privacy</a>
+                    <a class="footer__link" href="#">Our teams</a>
+                </div>
+                <div class="col-md-4 copyright">
+                    <span>by TonYem for RSS at 2020</span>
+                </div>
             </div>
         </div>
-    </footer>
+    </footer><!--    Footer-->
+    
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

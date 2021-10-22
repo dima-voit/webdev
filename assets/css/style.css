@@ -1,0 +1,374 @@
+body {
+    min-width: 320px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #4E4E4E;
+    background-color: #fff;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section {
+    padding: 120px 0 140px;
+}
+
+.section__title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #373737;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.section__text {
+    margin-bottom: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #4e4e4e;
+    line-height: 1.4;
+}
+
+.section--gray {
+    background-color: #f5f6f7;
+}
+
+.btn {
+    padding: 15px 50px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Header */
+.header {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 95px;
+    z-index: 1000;
+}
+
+.navbar {
+    padding-top: 25px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #a3a3a3;
+    transition: color .3s linear;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(255,255,255,.85);
+    border-color: rgba(255,255,255,.85);
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.85)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.05rem;
+}
+
+.navbar-toggler {
+    padding: 0 6px;
+}
+
+.social__icon {
+    transition: all .3s linear;
+}
+
+.social__icon:hover {
+    box-shadow: 0 0 20px #0d6efd;
+    border-radius: 50%;
+    transform: scale(1.1);
+}
+/* Header */
+
+/* Intro */
+.intro {
+    height: 750px;
+    padding-top: 95px;
+    background: #2F3748 url('../img/bg-image.jpg') center no-repeat;
+    background-size: cover;
+}
+
+.intro__title {
+    margin-bottom: 20px;
+    font-size: 64px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.2;
+    letter-spacing: 4.5px;
+}
+
+.intro__text {
+    max-width: 510px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.intro .btn {
+    margin-bottom: 180px;
+}
+
+.social__item {
+    margin-right: 30px;
+}
+
+.social__item:last-child {
+    margin-right: 0;
+}
+/* Intro */
+
+/* Comunity block */
+.comunity__content {
+    text-align: center;
+}
+
+.comunity__content img {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+.community__title {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #373737;
+    line-height: 1.25;
+    text-transform: uppercase;
+}
+
+.community__text {
+    font-size: 14px;
+    font-weight: 400;
+    color: #4e4e4e;
+    line-height: 1.2;
+}
+/* Comunity block */
+
+/* Section newsletter */
+.section__newsletter {
+    position: relative;
+    background: #2F3748 url('../img/bg-section-newsletter.jpg') center no-repeat;
+    background-size: cover;
+}
+
+.section__newsletter::after {
+    content: ''; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    background: rgba(0,0,0,.5);
+}
+
+.newsletter__item {
+    z-index: 5;
+}
+
+.newsletter--title {
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+/* Section App */
+.btn-store {
+    position: relative;
+    padding: 18px 68px 18px 20px;
+    color: #fff;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, #3485ff 75%, #0d6efd 25%);
+    transition: background .5s linear;
+    border: none;
+    outline: none;
+}
+
+.btn-store:hover {
+    color: #fff;
+}
+
+.btn-store::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background: #0d6efd;
+    transition: width .3s;
+    opacity: 0.2;
+}
+
+.btn-store:hover::before {
+    width: 100%;
+}
+
+.btn-store::after {
+    content: "";
+    position: absolute;
+    right: 11px;
+    width: 20px;
+    height: 20px;
+}
+
+.apple-store::after {
+    background-image: url('../img/apple.svg');
+    background-repeat: no-repeat;
+}
+
+.google-store::after {
+    background-image: url('../img/android.svg');
+    background-repeat: no-repeat;
+}
+/* Section App */
+
+/* Footer */
+.footer {
+    padding: 60px 0 80px;
+    background-color: #000;
+}
+
+.footer__link {
+    color: #fff;
+    margin-right: 20px;
+}
+
+.footer__link:last-child {
+    margin-right: 0;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    width: auto;
+    margin: 20px auto;
+}
+/* Footer */
+
+
+
+/* Media querys */
+@media (max-width: 992px) {
+    .intro {
+        height: 550px;
+    }
+
+    .intro__title {
+        font-size: 60px;
+    }
+
+    .intro .btn {
+        margin-bottom: 90px;
+    }
+
+    .btn {
+        padding: 10px 25px;
+    }
+    .section {
+        padding: 70px 0;
+    }
+
+    .section__title {
+        font-size: 20px;
+    }
+
+    .footer {
+        padding: 50px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 30px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        padding-top: 15px;
+    }
+
+    .intro {
+        height: 450px;
+    }
+
+    .intro__title {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+    .intro__text {
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+
+    .intro .btn {
+        margin-bottom: 40px;
+    }
+
+    .section {
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    .section__title {
+        margin-bottom: 15px;
+    }
+
+    .section__text {
+        margin-bottom: 20px;
+    }
+
+    .section__rappresent .btn,
+    .section__implement .btn {
+        margin-bottom: 20px;
+    }
+
+    .section__implement .row {
+        flex-direction: column-reverse;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer__logo {
+        margin-bottom: 20px;
+    }
+}
