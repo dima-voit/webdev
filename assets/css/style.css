@@ -68,6 +68,11 @@ img {
     padding-top: 25px;
 }
 
+.navbar-nav {
+    text-align: center;
+    background-color: #000;
+}
+
 .navbar-light .navbar-nav .nav-link {
     color: #a3a3a3;
     transition: color .3s linear;
@@ -205,54 +210,12 @@ img {
 }
 
 /* Section App */
-.btn-store {
-    position: relative;
-    padding: 18px 68px 18px 20px;
-    color: #fff;
-    text-transform: uppercase;
-    background-image: linear-gradient(to right, #3485ff 75%, #0d6efd 25%);
-    transition: background .5s linear;
-    border: none;
-    outline: none;
+.app--wrap {
+    text-align: end;
 }
 
-.btn-store:hover {
-    color: #fff;
-}
-
-.btn-store::before {
-    content: "";
-    position: absolute;
-    display: block;
-    top: 0;
-    right: 0;
-    width: 0;
-    height: 100%;
-    background: #0d6efd;
-    transition: width .3s;
-    opacity: 0.2;
-}
-
-.btn-store:hover::before {
-    width: 100%;
-}
-
-.btn-store::after {
-    content: "";
-    position: absolute;
-    right: 11px;
-    width: 20px;
-    height: 20px;
-}
-
-.apple-store::after {
-    background-image: url('../img/apple.svg');
-    background-repeat: no-repeat;
-}
-
-.google-store::after {
-    background-image: url('../img/android.svg');
-    background-repeat: no-repeat;
+.gplay--wrap {
+    text-align: start;
 }
 /* Section App */
 
@@ -265,6 +228,10 @@ img {
 .footer__link {
     color: #fff;
     margin-right: 20px;
+}
+
+.footer__link:hover {
+    color: #ccc;
 }
 
 .footer__link:last-child {
