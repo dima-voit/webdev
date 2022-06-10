@@ -47,7 +47,7 @@
                     <p>Whatever the approach to development may be, the final program must satisfy some fundamental properties</p>
                 </div>
                 <div class="text-center">
-                    <button type="button" class="btn btn-primary rounded-0">Get started</button>
+                    <button type="button" class="btn btn-primary rounded-0" data-bs-toggle="modal" data-bs-target="#getStartedModal">Get started</button>
                 </div>
                 <div class="col text-center">
                     <a href="#" class="social__item" target="_blank">
@@ -73,7 +73,7 @@
                 <div class="col-md-4 col-sm-6">
                     <h2 class="section__title">Rappresent your idea with smart Design</h2>
                     <p class="section__text">Tasks accompanying and related to programming include: testing, debugging, source code maintenance, implementation of build systems, and management of derived artifacts, such as the machine code of computer programs. </p>
-                    <button type="button" class="btn btn-primary rounded-0">Get started</button>
+                    <button type="button" class="btn btn-primary rounded-0"  data-bs-toggle="modal" data-bs-target="#getStartedModal">Get started</button>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <img src="./assets/img/content-image-1.jpg" alt="Photo">
@@ -194,6 +194,36 @@
         </div>
     </footer><!--    Footer-->
     
+    <!-- Modal -->
+    <div id="getStartedModal" class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Register</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput" class="form-label">Your name</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="John Design" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput" class="form-label">E-mail adress</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="example@mail.com" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="formGroupExampleInput2" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="*****" required>
+                        </div>
+                        <div class="text-center mb-3">
+                            <button type="submit" class="btn btn-primary rounded-0">Get Started</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            </div>
+        </div>
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
